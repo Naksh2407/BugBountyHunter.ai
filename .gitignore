@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Caches
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+
+# Local databases & Celery state
+*.db
+celery_results.db
+autofix.db
+
+# Environment variables (credentials)
+.env
+
+# Scratch directories
+scratch/
+repositories/
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
