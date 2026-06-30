@@ -50,7 +50,7 @@ class LLMService:
             return code_context
 
         try:
-            prompt = f"""
+            prompt = """
 You are an expert software engineer.
 """
             if header_context:
@@ -120,7 +120,7 @@ Return ONLY the corrected code for the specified 'Code to fix' block.
             return code_context
 
         try:
-            prompt = f"""
+            prompt = """
 You are an expert software engineer.
 """
             if header_context:

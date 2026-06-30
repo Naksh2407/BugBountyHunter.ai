@@ -51,7 +51,7 @@ class ContextAgent:
                 
                 if enclosing_node:
                     start = enclosing_node.lineno - 1
-                    end = enclosing_node.end_lineno
+                    end = enclosing_node.end_lineno if enclosing_node.end_lineno is not None else (start + 1)
                     print(f"AST context extraction succeeded for {os.path.basename(file_path)}: found node {type(enclosing_node).__name__} on lines {start+1}-{end}")
                     return "".join(lines[start:end]), start, end
             except Exception as e:

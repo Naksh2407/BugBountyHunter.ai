@@ -5,7 +5,7 @@ import time
 try:
     import jwt  # type: ignore
 except ImportError:
-    jwt = None
+    jwt = None  # type: ignore
 
 class GithubApp:
 

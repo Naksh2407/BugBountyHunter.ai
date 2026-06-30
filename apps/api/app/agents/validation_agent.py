@@ -73,10 +73,8 @@ class ValidationAgent:
     ):
         # 1. Determine command based on stack
         if stack == "node":
-            cmd = ["npm", "test"]
             docker_image = "node:18-slim"
         else:  # default to python
-            cmd = ["pytest"]
             docker_image = "python:3.10-slim"
 
         # 2. Try Docker validation first

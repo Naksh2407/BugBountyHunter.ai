@@ -8,7 +8,7 @@ from app.api.mcp_router import router as mcp_router
 
 from app.core.database import Base
 from app.core.database import engine
-from app.models.memory import FixPatternMemory
+from app.models.memory import FixPatternMemory  # noqa: F401
 
 
 from app.api.scans import (

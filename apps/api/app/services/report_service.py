@@ -2,7 +2,7 @@
 class ReportService:
 
     @staticmethod
-    def generate_markdown_report(findings: dict, validation_results: dict, applied_fixes: list, attempts: list = None) -> str:
+    def generate_markdown_report(findings: dict, validation_results: dict, applied_fixes: list, attempts: list | None = None) -> str:
         report = "# 🎯 BugBountyHunter Scan & Auto-Repair Report\n\n"
         
         # 1. Summary Section

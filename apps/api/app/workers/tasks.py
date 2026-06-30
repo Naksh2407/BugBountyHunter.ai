@@ -34,7 +34,7 @@ from app.core.database import SessionLocal, Base, engine
 from app.models.repository import Repository
 from app.models.scan import Scan
 from app.models.fix import Fix
-from app.models.memory import FixPatternMemory
+from app.models.memory import FixPatternMemory  # noqa: F401
 
 # Ensure tables are created when the Celery worker initializes
 Base.metadata.create_all(bind=engine)

@@ -49,7 +49,7 @@ class MemoryStoreService:
         
         if match:
             print(f"Memory Hit! Found previous successful patch for {tool} [{error_type}].")
-            return match.successful_patch
+            return match.successful_patch  # type: ignore
             
         return None
 
