@@ -164,3 +164,11 @@ Add the following configuration to your `claude_desktop_config.json` (located at
 }
 ```
 Now, you can interact with `BugBountyHunter` from Claude Desktop to initiate scans, run code repairs, or execute sandboxed tests.
+
+---
+
+## 🎥 Dashboard Preview
+Below is a preview of the high-fidelity glassmorphic dashboard of **BugBountyHunter.ai** displaying real-time security vulnerabilities, static scan outcomes, and self-refining patch diff corrections:
+
+![BugBountyHunter Dashboard Preview](apps/api/app/static/dashboard_screenshot.png)
+
