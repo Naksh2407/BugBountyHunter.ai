@@ -1,7 +1,7 @@
 try:
     import docker  # type: ignore
 except ImportError:
-    docker = None
+    docker = None  # type: ignore
 
 class DockerManager:
 
